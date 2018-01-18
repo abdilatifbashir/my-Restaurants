@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String TAG = MainActivity.class.getSimpleName();
+   /* public static final String TAG = MainActivity.class.getSimpleName();*/
     private Button mFindRestaurantsButton;
     private EditText mLocationEditText;
 
@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
               /*  Toast.makeText(MainActivity.this, "cool you will recieve hotels around you soon!", Toast.LENGTH_LONG).show();*/
                 String location = mLocationEditText.getText().toString();
-                Log.e(TAG, location);
+               /* Log.e(TAG, location);*/
                 Intent intent = new Intent(MainActivity.this, RestaurantsActivity.class);
+                intent.putExtra("location",location);
                 startActivity(intent);
 
 
