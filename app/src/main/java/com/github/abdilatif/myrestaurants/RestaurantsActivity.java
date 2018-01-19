@@ -15,5 +15,6 @@ public class RestaurantsActivity extends AppCompatActivity {
         mLocationTextView = (TextView) findViewById(R.id.locationTextView);
         Intent intent = getIntent();
         String location = intent.getStringExtra("location");
+        mLocationTextView.setText("Here are all the restaurants near: " + location);
     }
 }
