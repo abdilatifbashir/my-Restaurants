@@ -7,17 +7,6 @@
     tools:context="com.github.abdilatif.myrestaurants.MainActivity"
     android:background="#FF5722"
     tools:ignore="MissingPrefix">
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="MyRestaurants"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="35dp"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="30sp"
-        android:textStyle="bold"
-    android:id="@+id/textView" />
 
 
     <Button
@@ -37,6 +26,19 @@
         android:id="@+id/imageView"
         android:src="@drawable/food"
         android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="MyRestaurants"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
